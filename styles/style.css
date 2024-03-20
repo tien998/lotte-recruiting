@@ -98,6 +98,9 @@ nav .active {
   background-image: url(../resourses/imgs/main/04-carousel.jpg);
 }
 
+#opportunity {
+  scroll-margin-top: 5rem;
+}
 #opportunity .col p {
   margin: 1rem 0;
 }
