@@ -87,16 +87,16 @@ nav .active {
   background-position: 50%;
 }
 #mainCarouselFade .carousel-item #main-img {
-  background-image: url(resourses/imgs/main/@main_visual01.jpg);
+  background-image: url(../../resourses/imgs/main/@main_visual01.jpg);
 }
 #mainCarouselFade .carousel-item #img-2 {
-  background-image: url(resourses/imgs/main/02-carousel.png);
+  background-image: url(../../resourses/imgs/main/02-carousel.png);
 }
 #mainCarouselFade .carousel-item #img-3 {
-  background-image: url(resourses/imgs/main/03-carousel.png);
+  background-image: url(../../resourses/imgs/main/03-carousel.png);
 }
 #mainCarouselFade .carousel-item #img-4 {
-  background-image: url(resourses/imgs/main/04-carousel.jpg);
+  background-image: url(../../resourses/imgs/main/04-carousel.jpg);
 }
 
 #opportunity .row * {
