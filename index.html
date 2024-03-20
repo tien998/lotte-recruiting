@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Tuyển dụng Lotte</title>
+</head>
+
+<body>
+    <header class="fixed-top bg-white">
+        <div class="bg-secondary-subtle text-white-50 p3">...</div>
+        <nav class="container p-4">
+            <div class="nav justify-content-center justify-content-md-between">
+                <div class="logo">
+                    <img src="/resourses/imgs/logo-01.png" alt="lotte-finance-logo">
+                </div>
+                <nav class="nav d-none d-lg-flex gap-3">
+                    <a href="#" class="active">Trang chủ</a>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Cơ hội nghề nghiệp</a>
+                    <a href="#">Liên hệ</a>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <div id="banner-video">
+        <div class="filter-video">
+        </div>
+        <video muted loop autoplay playsinline muted id="bgvid">
+            <source src="resourses/videos/lottefinance.mp4" type="video/mp4">
+        </video>
+        <div class="texton">
+            <div class="slogan">
+                <h1 class="text-white">For wealth, for value</h1>
+            </div>
+            <div class="join-talent-onclip">
+                <a href="#" class="showDialogD">
+                    Gia nhập cùng Lotte Finance
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="container my-6">
+            <h2 class="fw-bold text-uppercase text-center my-5">Giới thiệu</h2>
+            <div id="instroduce">
+                <p>
+                    Được thành lập năm 1948, LOTTE là một trong những tập đoàn toàn cầu lớn nhất tại Hàn Quốc, tham gia
+                    vào nhiều lĩnh vực kinh doanh bao gồm phân phối, khách sạn, du lịch, F&B, xây dựng, hóa học và tài
+                    chính.
+                </p>
+                <p>
+                    LOTTECard hoạt động trên toàn bộ mạng lưới và cơ sở hạ tầng của Tập đoàn LOTTE, từ các cửa hàng bách
+                    hóa, siêu thị, mua sắm trực tuyến đến rạp chiếu phim và cửa hàng cà phê. LOTTECard là một trong
+                    những nhà cung cấp sản phẩm tài chính tín dụng hàng đầu của Hàn Quốc, ứng dụng công nghệ FinTech vào
+                    dịch vụ. Ngoài ra, thấu hiểu sự đa dạng trong phong cách sống của khách hàng, LOTTECard luôn tận tâm
+                    để phát triển các dịch vụ cạnh tranh chỉ có thể tìm thấy tại LOTTECard.
+                </p>
+                <p>
+                    Năm 2017, LOTTECard ký kết Thỏa thuận mua lại 100% cổ phần của công ty tài chính thuộc một trong
+                    những ngân hàng lớn nhất Việt Nam, đánh dấu sự mở rộng đầu tư và thâm nhập vào lĩnh vực Tài chính
+                    của tập đoàn LOTTE tại đây. Giấy phép kinh doanh của Công ty Tài chính LOTTE (LOTTE Finance) được
+                    Ngân hàng Nhà nước Việt Nam phê duyệt vào tháng 9 năm 2018, đưa LOTTECard trở thành công ty thẻ tín
+                    dụng đầu tiên của Hàn Quốc được phép hoạt động tại Việt Nam.
+                </p>
+                <p>
+                    Các dịch vụ tài chính của LOTTE Finance tại Việt Nam được phát triển dựa trên sự thấu hiểu khách
+                    hàng, kết hợp nền tảng công nghệ hiện đại và tiên tiên tiến như Fintech, Big Data. Mục tiêu của công
+                    ty là trở thành nhà cung cấp dịch vụ tài chính hàng đầu tại Việt Nam, mang đến các giải pháp tài
+                    chính linh hoạt và phù hợp với phong cách sống của người dân, từ đó gia tăng giá trị và lợi ích cho
+                    khách hàng, đồng thời là cơ sở để tối ưu hóa nền tảng hạ tầng, tiệm cận với nhu cầu ngày càng đa
+                    dạng từ người tiêu dùng.
+                </p>
+                <p>
+                    Truy cập website để biết thêm thông tin: <a
+                        href="https://www.lottefinance.vn/web">https://www.lottefinance.vn</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="mainCarouselFade" class="d-none d-lg-block carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarouselFade" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarouselFade" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarouselFade" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#mainCarouselFade" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="main-img"></div>
+                </div>
+                <div class="carousel-item ">
+                    <div id="img-2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="img-3"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="img-4"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="opportunity" class="bg-secondary-subtle py-6">
+            <div class="container text-center">
+                <h2 class="fw-bold">CƠ HỘI NGHỀ NGHIỆP</h2>
+                <div class="row">
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job1.png" alt="bán-hàng-kinh-doanh">
+                        <p>Bán hàng / Kinh doanh</p>
+                    </div>
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job2.png" alt="chứng-khoán">
+                        <p>Chứng khoán</p>
+                    </div>
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job3.png" alt="Dịch-vụ-khách-hàng">
+                        <p>Dịch vụ khách hàng</p>
+                    </div>
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job4.png" alt="Luật-Pháp-lý">
+                        <p>Luật / Pháp lý</p>
+                    </div>
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job5.png" alt="Ngân-hàng">
+                        <p>Ngân hàng</p>
+                    </div>
+                    <div class="col col-6 col-lg-4 g-3">
+                        <img src="/resourses/imgs/main/job6.png" alt="Tài-chính-Đầu-tư">
+                        <p>Tài chính / Đầu tư</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
