@@ -7,29 +7,35 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Tuyển dụng Lotte</title>
 </head>
 
+
 <body>
     <header class="fixed-top bg-white">
         <div class="bg-secondary-subtle text-white-50 ">...</div>
         <nav class="container p-4">
-            <div class="nav justify-content-center justify-content-md-between">
+            <div class="nav justify-content-center justify-content-md-between align-items-center">
                 <div class="logo">
-                    <img src="resourses/imgs/logo-01.png" alt="lotte-finance-logo">
+                    <img src="resourses/imgs/logo-01.png" alt="lotte-finance-logo" class="w-75">
+                    <p>Chi nhánh BR-VT</p>
                 </div>
-                <nav class="nav d-none d-lg-flex gap-3">
+                <nav class="nav d-none d-lg-flex gap-3 align-items-center">
                     <a href="#" class="active">Trang chủ</a>
-                    <a href="#">Giới thiệu</a>
-                    <a href="#">Cơ hội nghề nghiệp</a>
-                    <a href="#">Liên hệ</a>
+                    <a href="#instroduce">Giới thiệu</a>
+                    <a href="#opportunity">Cơ hội nghề nghiệp</a>
+                    <a class="showDialogD" data-bs-toggle="modal" data-bs-target="#enroll">Liên hệ</a>
                 </nav>
             </div>
         </nav>
     </header>
-    <div class="p-5">space holder</div>
+    <div class="p-4">space holder</div>
 
     <div id="banner-video">
         <div class="filter-video">
@@ -42,7 +48,7 @@
                 <h1 class="text-white">For wealth, for value</h1>
             </div>
             <div class="join-talent-onclip">
-                <a href="#" class="showDialogD">
+                <a class="showDialogD py-4 px-5" data-bs-toggle="modal" data-bs-target="#enroll">
                     Gia nhập cùng Lotte Finance
                 </a>
             </div>
@@ -113,38 +119,135 @@
         </div>
 
 
-        <div id="opportunity" class="bg-secondary-subtle py-6">
-            <div class="container text-center">
-                <h2 class="fw-bold">CƠ HỘI NGHỀ NGHIỆP</h2>
-                <div class="row">
-                    <div class="col col-6 col-lg-4 g-3">
-                        <img src="resourses/imgs/main/job1.png" alt="bán-hàng-kinh-doanh">
-                        <p>Bán hàng / Kinh doanh</p>
+        <div id="opportunity" class="bg-secondary-subtle py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center m-5">CƠ HỘI NGHỀ NGHIỆP</h2>
+                <div class="d-flex flex-column gap-5">
+                    <div class="row">
+                        <div class="col col-md-4 text-center lead">
+                            <img src="resourses/imgs/main/job3.png" alt="bán-hàng-kinh-doanh">
+                            <p>Tư vấn tín dụng</p>
+                        </div>
+                        <div class="col col-md-8">
+                            <p><b>Tìm kiếm khách hàng</b> tiềm năng có nhu cầu vay vốn.</p>
+                            <p><b>Giải đáp thắc mắc</b> của khách hàng về các sản phẩm và dịch vụ tín dụng.</p>
+                            <p><b>Hỗ trợ</b> khách hàng hoàn thiện thủ tục vay vốn</p>
+                            <p><b>Chăm sóc</b> khách hàng</p>
+                            <p><b class="text-decoration-underline">Yêu cầu nhỏ nhoi</b>: Tốt nghiệp THPT
+                            </p>
+                        </div>
                     </div>
-                    <div class="col col-6 col-lg-4 g-3">
+                    <!-- <div class="col">
                         <img src="resourses/imgs/main/job2.png" alt="chứng-khoán">
                         <p>Chứng khoán</p>
+                    </div> -->
+                    <div class="row">
+                        <div class="col col-md-4 text-center lead">
+                            <img src="resourses/imgs/main/job1.png" alt="bán-hàng-kinh-doanh">
+                            <p>Nhóm trưởng kinh doanh</p>
+                        </div>
+                        <div class="col col-md-8">
+                            <p><b>Tuyển dụng</b> và <b>đào tạo</b> một đội nhóm nhiệt huyết năng động</p>
+                            <p><b>Chịu trách nhiệm</b> chỉ tiêu doanh thu từ công ty.</p>
+                            <p><b>Bảo vệ </b> đồng đội trước những áp lực từ cấp trên</p>
+                            <p><b class="text-decoration-underline">Yêu cầu nhỏ nhoi</b>: Có kinh nghiệm tài chính, bán
+                                hàng hoặc quản lý</p>
+                        </div>
                     </div>
-                    <div class="col col-6 col-lg-4 g-3">
-                        <img src="resourses/imgs/main/job3.png" alt="Dịch-vụ-khách-hàng">
-                        <p>Dịch vụ khách hàng</p>
-                    </div>
-                    <div class="col col-6 col-lg-4 g-3">
+                    <!-- <div class="col">
                         <img src="resourses/imgs/main/job4.png" alt="Luật-Pháp-lý">
                         <p>Luật / Pháp lý</p>
-                    </div>
-                    <div class="col col-6 col-lg-4 g-3">
+                    </div> -->
+                    <!-- <div class="col">
                         <img src="resourses/imgs/main/job5.png" alt="Ngân-hàng">
                         <p>Ngân hàng</p>
-                    </div>
-                    <div class="col col-6 col-lg-4 g-3">
+                    </div> -->
+                    <!-- <div class="col">
                         <img src="resourses/imgs/main/job6.png" alt="Tài-chính-Đầu-tư">
                         <p>Tài chính / Đầu tư</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="text-center my-6 fs-5">
+                <a class="showDialogD py-4 px-5" data-bs-toggle="modal" data-bs-target="#enroll">Gia nhập cùng
+                    Lotte Finance BR-VT</a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <a class="showDialogD" data-bs-toggle="modal" data-bs-target="#enroll">Liên hệ ứng tuyển</a>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade text-dark" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-around align-items-center">
+                        <span class="modal-title text-uppercase fw-bold" id="enrollLabel">
+                            Nguyễn Hữu Vinh
+                        </span>
+                        <span>-</span>
+                        <span>
+                            Nhóm trưởng kinh doanh <br> Chi nhánh BR-VT
+                        </span>
+                    </div>
+                    <div class="p-5 d-flex flex-wrap justify-content-center gap-5 fs-7">
+                        <a href="https://www.facebook.com/huuvinh.brt" target="_blank" rel="noopener noreferrer"
+                            class="text-main">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="tel:0907280386" target="_blank" rel="noopener noreferrer" class="text-main">
+                            <i class="fa-solid fa-mobile"></i>
+                        </a>
+
+                        <a href="mailto:huuvinhhr@gmail.com" target="_blank" rel="noopener noreferrer"
+                            class="text-main">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Sđt cũng là số Zalo</p>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
+
+    <footer class="bg-dark py-5">
+        <div class="container my-5">
+            <div class="d-flex text-white justify-content-between flex-wrap gap-5">
+
+                <div>
+                    <p>Địa chỉ công ty:
+                        <b>
+                            A4-7/18 Trung Tâm Đô Thị Chí Linh, Đường Nguyễn Hữu Cảnh, Phường Thắng
+                            Nhất, Tp Vũng Tàu
+                        </b>
+                    </p>
+                    <p>
+                        SĐT / Zalo: <a href="tel:0907280386" target="_blank" class="text-uppercase"><b>0907
+                                280 386</b></a>
+                    </p>
+                    <p>
+                        Gmail: <a href="mailto:huuvinhhr@gmail.com" target="_blank">Huuvinhhr@gmail.com</a>
+                    </p>
+                    <p>Trưởng nhóm kinh doanh: <a href="https://www.facebook.com/huuvinh.brt" target="_blank"
+                            class="text-uppercase">Nguyễn Hữu Vinh</a>
+                    </p>
+
+                </div>
+                <div class="d-flex align-items-end">
+                    <p>
+                        Trang Web được gia công bởi
+                        <a href="https://www.facebook.com/minhtien.vu.7758/" target="_blank" class="text-warning">
+                            Minh Tiến</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 
 

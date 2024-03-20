@@ -34,6 +34,10 @@ nav {
     }
 }
 
+.logo {
+    cursor: pointer;
+}
+
 #banner-video {
     position: relative;
     max-height: 70vh;
@@ -77,15 +81,11 @@ nav {
         font-weight: 700;
     }
 
-    .showDialogD {
-        color: #fff;
-        text-decoration: none;
-        background-color: var(--main-color);
-        padding: 1rem 2rem;
-    }
+
 }
 
 #instroduce {
+    scroll-margin-top: 15rem;
     font-size: 15px;
     font-weight: normal;
 }
@@ -119,27 +119,52 @@ nav {
 }
 
 #opportunity {
-    .row {
-        * {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
+
+    // scroll-margin-top: 15rem;
+    .col {
+        p {
+            margin: 1rem 0;
         }
+
     }
 
-    p {
+    .lead {
         color: var(--main-color);
         font-size: 1.5rem;
 
         &:hover {
             cursor: pointer;
-            text-decoration: underline;
+            text-decoration: underline var(--main-color);
         }
     }
+}
 
-    img {
-        max-width: 50%;
+#contact {
+    position: fixed;
+    z-index: 101;
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+footer {
+    a {
+        font-size: 1.25rem;
+        color: orange;
+        text-decoration: none;
+    }
+}
+
+.showDialogD {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    font-weight: 800;
+
+    &:hover {
+        color: #333;
+        background-color: #fff;
+        cursor: pointer;
     }
 }
 
@@ -151,4 +176,16 @@ nav {
 .py-6 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.fs-7 {
+    font-size: 5rem;
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.bg-main {
+    background-color: var(--main-color);
 }
