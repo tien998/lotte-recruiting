@@ -51,8 +51,7 @@ nav {
     #bgvid1 {
         width: 100%;
         object-fit: cover;
-        // transform: translateY(-30%);
-        top: 50%;
+
     }
 
     #bgvid {
@@ -61,9 +60,7 @@ nav {
         height: auto;
         min-height: 100%;
         max-height: 70vh;
-
         background: transparent no-repeat;
-        background-size: cover;
         display: block;
     }
 

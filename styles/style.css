@@ -46,7 +46,6 @@ nav .active {
 #banner-video #bgvid1 {
   width: 100%;
   object-fit: cover;
-  top: 50%;
 }
 #banner-video #bgvid {
   width: auto;
@@ -55,7 +54,6 @@ nav .active {
   min-height: 100%;
   max-height: 70vh;
   background: transparent no-repeat;
-  background-size: cover;
   display: block;
 }
 #banner-video .texton {
