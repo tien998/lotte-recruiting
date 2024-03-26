@@ -139,6 +139,19 @@ footer a {
   cursor: pointer;
 }
 
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.h-0 {
+  height: 0;
+}
+
 .my-6 {
   margin-top: 5rem;
   margin-bottom: 5rem;

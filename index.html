@@ -24,7 +24,9 @@
             <div class="nav justify-content-center justify-content-md-between align-items-center">
                 <div class="logo">
                     <img src="resourses/imgs/logo-01.png" alt="lotte-finance-logo" class="w-75">
-                    <p>Chi nhánh BR-VT</p>
+                </div>
+                <div class="d-lg-none">
+                    <i class="fa-solid fa-bars fs-3 toggle" data-cus-target="#nav-collapse" onclick="toggle()"></i>
                 </div>
                 <nav class="nav d-none d-lg-flex gap-3 align-items-center">
                     <a href="#" class="active">Trang chủ</a>
@@ -32,6 +34,15 @@
                     <a href="#opportunity">Cơ hội nghề nghiệp</a>
                     <a class="showDialogD" data-bs-toggle="modal" data-bs-target="#enroll">Liên hệ</a>
                 </nav>
+                <nav id="nav-collapse" class="nav d-none h-0  gap-3 align-items-center">
+                    <a onclick="toggle()" class="active w-100" href="#">Trang chủ</a>
+                    <a onclick="toggle()" class="w-100" href="#instroduce">Giới thiệu</a>
+                    <a onclick="toggle()" class="w-100" href="#opportunity">Cơ hội nghề nghiệp</a>
+                    <a onclick="toggle()" class="w-100 showDialogD" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Liên hệ</a>
+                </nav>
+                <!-- <div class="overlay d-none"></div> -->
+
             </div>
         </nav>
     </header>
@@ -307,6 +318,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
